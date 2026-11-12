@@ -7,3 +7,23 @@
 .cover-bottom{justify-content:flex-end}.contents .about-list>div{font-size:clamp(22px,2.6vw,38px)}.education h2{font-size:clamp(46px,5.8vw,88px)}.education .journey p{font-size:clamp(18px,1.7vw,24px)}.education .bottom-line{max-width:950px}.reflection .split{margin-top:25px}.reflection .split p{font-size:clamp(20px,2vw,28px);margin-bottom:20px}@media(max-width:800px){.education h2{font-size:44px}.education .journey{margin-top:20px}.education .bottom-line{margin-top:18px}.reflection .split p{font-size:20px}}
 
 .demo .build-question{font-size:clamp(20px,2vw,28px);font-weight:600;margin:0 0 18px}.demo .tool-line{margin:20px 0 16px}
+
+/* Basketball theme with an optional original design. */
+html[data-theme="basketball"]{--paper:#181817;--ink:#f7f3e9;--line:#f7f3e938;--court:#f76822}
+html[data-theme="basketball"] body{background:var(--paper)}
+html[data-theme="basketball"] header{border-bottom:3px solid var(--court)}
+html[data-theme="basketball"] .brand,html[data-theme="basketball"] .eyebrow,html[data-theme="basketball"] .journey small,html[data-theme="basketball"] .about-list b,html[data-theme="basketball"] .demo-label{color:var(--court)}
+html[data-theme="basketball"] h1,html[data-theme="basketball"] h2{font-weight:800;letter-spacing:-.015em}
+html[data-theme="basketball"] .slide{isolation:isolate}
+html[data-theme="basketball"] .slide:before{content:"";position:absolute;right:-170px;top:20%;width:450px;height:450px;border:2px solid #f768221c;border-radius:50%;z-index:-1;pointer-events:none}
+html[data-theme="basketball"] .cover:before{width:470px;height:470px;right:-120px;top:30px;border-color:#f7682240;background:linear-gradient(90deg,transparent 49.8%,#f7682240 49.8% 50.2%,transparent 50.2%),linear-gradient(0deg,transparent 49.8%,#f7682240 49.8% 50.2%,transparent 50.2%)}
+html[data-theme="basketball"] .cover h1{max-width:85%;position:relative}
+html[data-theme="basketball"] .cover-bottom,html[data-theme="basketball"] .journey>div,html[data-theme="basketball"] .tool-line,html[data-theme="basketball"] .closing-footer{border-color:var(--court)}
+html[data-theme="basketball"] .side-note,html[data-theme="basketball"] blockquote{border-left:4px solid var(--court)}
+html[data-theme="basketball"] .tool-line span,html[data-theme="basketball"] .build-question{color:var(--court)}
+html[data-theme="basketball"] #count{background:var(--court);color:#181817;padding:7px 10px;font-weight:bold}
+html[data-theme="basketball"] #progress{background:var(--court)}
+html[data-theme="basketball"] dialog,html[data-theme="basketball"] #notes-panel{background:#20201e;border-color:var(--court)}
+html[data-theme="basketball"] li::marker{color:var(--court)}
+#theme-toggle{white-space:nowrap}
+@media(max-width:800px){footer>div{gap:2px}footer button{padding:6px 3px;font-size:10px}}
